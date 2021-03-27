@@ -49,6 +49,7 @@ class Board extends React.Component {
     
     //The render method creates the visual board making 
     //a callback with an array.map method to the method renderRowSquare.
+    // my comment
     render() {
       console.log(process.env.REACT_APP_API);
       const tempArray = Array(3).fill(null);
