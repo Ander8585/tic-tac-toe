@@ -47,11 +47,12 @@ class Board extends React.Component {
     }
 
     
+   // new line was added 
     //The render method creates the visual board making 
     //a callback with an array.map method to the method renderRowSquare.
     // my comment
     render() {
-      console.log(process.env.REACT_APP_API);
+      console.log(process.env.NODE_ENV);
       const tempArray = Array(3).fill(null);
       const table = tempArray.map((_value,_index) => {
         return (<div key= {_index} className= {("board-row" + _index)}>
