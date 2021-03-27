@@ -52,7 +52,7 @@ class Board extends React.Component {
     //a callback with an array.map method to the method renderRowSquare.
     // my comment
     render() {
-      console.log(process.env.NODE_ENV);
+      console.log(process.env.REACT_APP_API);
       const tempArray = Array(3).fill(null);
       const table = tempArray.map((_value,_index) => {
         return (<div key= {_index} className= {("board-row" + _index)}>
