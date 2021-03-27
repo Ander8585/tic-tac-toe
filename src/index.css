@@ -1,13 +1,84 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ol, ul {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.board-row0 .square {
+  border-top: hidden;
+}
+
+.board-row2 .square {
+  border-bottom: hidden;
+}
+
+.square:first-child{
+  border-left: hidden;
+}
+
+.square:last-child{
+  border-right: hidden;
+}
+
+.square {
+  background: rgb(255, 255, 255);
+  border: 5px solid rgb(0, 0, 0);
+  float: left;
+  font-size: 96px;
+  font-weight: bold;
+  font-family: "Bradley Hand ITC";
+  line-height: 136px;
+  height: 136px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0;
+  text-align: center;
+  width: 136px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  /*padding-left: 300px;*/
+  padding-top: 50px;
+  width: 800px;
+  margin: 0 auto;
+  /*background-color: beige;*/
+  
+}
+
+.game-info {
+  margin-left: 50px;
+}
+/*.game-board {
+  
+}*/
+#resetgame {
+  margin-left: 20px;
+}
+
+.steps{
+  font-size: 20px;
 }
